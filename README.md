@@ -1,5 +1,7 @@
 # Matrix multiplication with ring rotation
 
+Teacher in charge : *Fabrice Huet* - [fabrice.huet@unice.fr](mailto:fabrice.huet@unice.fr)
+
 # Requirements
 
 You need :
