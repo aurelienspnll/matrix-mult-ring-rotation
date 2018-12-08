@@ -5,6 +5,7 @@
 You need :
 
 - gcc
+- [openMP](https://www.openmp.org/)
 - [open-mpi](https://www.open-mpi.org/)
 
 # Building
@@ -12,7 +13,7 @@ You need :
 To build this project you need to run the following command:
 
 ```bash
-mpicc mult-matrix-ring-rotation.c -o main -Wall
+mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp
 ```
 
 # Executing

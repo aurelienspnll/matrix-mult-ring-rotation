@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <mpi.h>
-//#include <omp.h>
+#include <omp.h>
 
 struct matrix {
     int height;
