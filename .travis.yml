@@ -1,0 +1,11 @@
+language: c
+compiler:
+  - clang
+  - gcc
+before_install:
+  - test -n $CC && unset CC
+env:
+  - OMP_NUM_THREADS=4
+script:
+  - mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp
+  - mpirun -np 4 ./main example/A example/B
