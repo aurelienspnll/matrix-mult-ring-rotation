@@ -1,5 +1,7 @@
 # Matrix multiplication with ring rotation
 
+[![Build Status](https://travis-ci.com/aurelienspnll/matrix-mult-ring-rotation.svg?branch=master)](https://travis-ci.com/aurelienspnll/matrix-mult-ring-rotation)
+
 Teacher in charge : *Fabrice Huet* - [fabrice.huet@unice.fr](mailto:fabrice.huet@unice.fr)
 
 # Requirements
