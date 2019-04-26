@@ -9,6 +9,7 @@ before_install:
   - sudo apt-get install -y openmpi-bin
 env:
   - OMP_NUM_THREADS=4
+  - CODECOV_TOKEN="f38fe413-4e68-4d7b-aafe-4fcdb4fc7420"
 script:
   - mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp -std=c99
   - mpirun -np 4 ./main example/A example/B
