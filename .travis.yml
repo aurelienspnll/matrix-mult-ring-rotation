@@ -11,5 +11,9 @@ env:
   - OMP_NUM_THREADS=4
   - CODECOV_TOKEN="f38fe413-4e68-4d7b-aafe-4fcdb4fc7420"
 script:
-  - mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp -std=c99
+  - mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp -std=c99 -coverage
   - mpirun -np 4 ./main example/A example/B
+  - gcov hello.c
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
