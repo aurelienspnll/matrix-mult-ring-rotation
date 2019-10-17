@@ -10,5 +10,5 @@ before_install:
 env:
   - OMP_NUM_THREADS=4
 script:
-  - mpicc mult-matrix-ring-rotation.c -o main -Wall -lm -fopenmp -std=c99
+  - mpicc matrix-mult-ring-rotation.c -o main -Wall -lm -fopenmp -std=c99
   - mpirun -np 4 ./main example/A example/B
